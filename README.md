@@ -1,1 +1,1 @@
-# alexandre-maciel-Frontend-Mentor-3-column-preview-card-component
+a project challenge by Frontend Mentor using HTML and CSS

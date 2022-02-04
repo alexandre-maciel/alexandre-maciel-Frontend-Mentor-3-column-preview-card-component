@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 0.75rem;
+    font-family: "Lexend Deca";
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 60%;
+    min-height: 25rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    min-height: 25rem;
+    min-width: 20%;
+}
+
+.container img {
+    width: 80px;
+    height: 50px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: "Big Shoulders Display";
+    font-size: 2rem;
+    color: hsl(0, 0%, 95%);
+}
+
+.container p{
+    display: block;
+    font-family: "Lexend Deca";
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.container button {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5%;
+    font-family: "Lexend Deca";
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 3rem;
+}
+
+/* container 1 */
+
+#c1{
+    background-color: hsl(31, 77%, 52%);
+}
+
+#c1 h2{
+    text-transform: uppercase;
+}
+
+#c1 button{
+    color: hsl(31, 77%, 52%);
+    min-width:7rem;
+}
+
+#c1 button:hover{
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+}
+
+
+/* container 2 */
+
+#c2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+#c2 button{
+    color: hsl(184, 100%, 22%);
+    min-width:7rem;
+}
+
+#c2 button:hover{
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+}
+
+
+/* container 3 */
+#c3{
+    background-color: hsl(179, 100%, 13%);
+}
+
+#c3 h2{
+    text-transform: uppercase;
+}
+
+#c3 button{
+    color: hsl(179, 100%, 13%);
+    min-width:7rem;
+}
+
+#c3 button:hover{
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: auto;
+    color: black;
+}
+
+@media screen and (max-width:700px) {
+    main{
+        flex-direction:column;
+        position: relative;
+        min-height: fit-content;
+        top:0;
+        transform: translate(-50%, 0);
+    }
+    .container{
+        min-height: fit-content;
+    }
+    .container button{
+        position: relative;
+    }
+    footer {
+        padding-top:5rem;
+        position: relative;
+        bottom: 0;
+      }
+}
